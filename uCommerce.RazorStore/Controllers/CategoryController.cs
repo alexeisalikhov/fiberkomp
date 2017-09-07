@@ -53,7 +53,9 @@ namespace UCommerce.RazorStore.Controllers
                 {
                     Sku = product.Sku,
                     Name = product.Name,
-                    ThumbnailImageUrl = product.ThumbnailImageUrl
+                    ThumbnailImageUrl = product.ThumbnailImageUrl,
+                    Url = "/product?product=" + product.RelatedProductIds,
+                    //PriceCalculation = CatalogLibrary.CalculatePrice(product)
                 };
 
 

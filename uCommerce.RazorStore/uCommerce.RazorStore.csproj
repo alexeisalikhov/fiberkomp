@@ -168,6 +168,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Semver, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\semver.1.1.2\lib\net45\Semver.dll</HintPath>
       <Private>True</Private>
     </Reference>
@@ -338,6 +339,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\aHomeController.cs" />
     <Compile Include="Controllers\BasketController.cs" />
     <Compile Include="Controllers\BillingController.cs" />
     <Compile Include="Controllers\BreadcrumbsController.cs" />
@@ -701,6 +703,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\aHome\" />
     <Folder Include="Views\uCommerceEmail\" />
   </ItemGroup>
   <ItemGroup />
@@ -740,7 +743,7 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>"$(SolutionDir)..\tools\deploy\Deploy.cmd" "$(ProjectDir)" "C:\Programming\Sites\UmbracoAcc"
+    <PostBuildEvent>"$(SolutionDir)..\tools\deploy\Deploy.cmd" "$(ProjectDir)" "C:\Fiber\Fibercon\Fibercon"
 </PostBuildEvent>
   </PropertyGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
